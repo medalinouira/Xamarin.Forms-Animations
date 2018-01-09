@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Animations.Views.AnimationsView"
+             Title="Animations"
+             xmlns:ex="clr-namespace:Xamarin.Forms.Toolkit.Extensions;assembly=Xamarin.Forms.ToolKit.Extensions"
+             ControlTemplate="{StaticResource MyTemplate}">
+
+    <ContentPage.Content>
+
+        <StackLayout x:Name="stlContent"  
+                     VerticalOptions="FillAndExpand">
+
+            <Image x:Name="imgXFAnimations"                    
+                   Source="{ex:ImageResource Key=ic_xfa.png}"/>
+           
+            <StackLayout VerticalOptions="EndAndExpand">
+
+                <Picker x:Name="pikAnimationTypes" 
+                        HeightRequest="60"
+                        HorizontalOptions="FillAndExpand"/>
+                
+                <Button x:Name="btnStartAnimation"
+                        Text="Start Animation"
+                        Style="{StaticResource BtnGray}"/>
+
+                <Button x:Name="btnCancelAnimation"
+                        Text="Cancel Animation"                        
+                        Style="{StaticResource BtnPink}"/>
+
+                <Button x:Name="btnInitializePosition"
+                        Text="Initialize Position"                        
+                        Style="{StaticResource BtnGray}"/>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Forms_Animations.Views.HomeView"
+             Title="Xamarin.Forms Animations"
+             ControlTemplate="{StaticResource MyTemplate}">
+
+    <ContentPage.Content>
+
+        <ContentView x:Name="contentView">
+
+            <ScrollView>
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+
+                    <Button x:Name="btnSimpleAnimations"
+                            Text="Simple Animations"                        
+                            Style="{StaticResource BtnGray}"/>
+
+                    <Button x:Name="btnEasingFunctions"
+                            Text="Easing Functions"                        
+                            Style="{StaticResource BtnPink}"/>
+
+                    <Button x:Name="btnCustomAnimations"
+                            Text="Custom Animations"
+                            Style="{StaticResource BtnGray}"/>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </ContentView>
+
+    </ContentPage.Content>
+
+</ContentPage>
